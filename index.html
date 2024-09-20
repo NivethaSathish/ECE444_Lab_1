@@ -115,6 +115,11 @@
         <a aria-label="Open Nivetha's resume in a new tab" href="https://nivethasathish.github.io/ECE444_Lab_1/assets/resume/NivethaSathishResumeDocument.pdf" target="_blank"
         class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Places Travelled section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Places Travelled</span></a>
+      </li>
     </ul>
   </nav>
 
@@ -375,7 +380,11 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-
+          <div id="recent-projects" class="col s12">
+            <!-- JavaScript will inject recent project content here -->
+          </div>
+        </div>
+        <button id="load-more" class="btn">Load More Projects</button>
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -686,7 +695,7 @@
   </main>
 
   <section id="places_travelled" class="section scrollspy full-height">
-    <h3 class="page-title white-text teal">Contact</h3>
+    <h3 class="page-title white-text teal">Places Travelled</h3>
     <div class="container">
       <p>
         <iframe src="https://www.google.com/maps/d/embed?mid=1Y4ksxuYzrLCaDR7GKgwDVKcMJzorHxU&ehbc=2E312F" width="640" height="480"></iframe>
@@ -724,6 +733,9 @@
       })
     })
   </script>
+
+<script src="/assets/js/dynamicContent.js"></script>
+ 
 </body>
 
 </html>
