@@ -43,7 +43,7 @@ function displayProject(project) {
   cardDiv.classList.add('col', 's12', 'm6', 'l6');
 
   const card = document.createElement('div');
-  card.classList.add('card', 'medium');
+  card.classList.add('card', 'large');
 
   const cardImage = document.createElement('div');
   cardImage.classList.add('card-image', 'waves-effect', 'waves-block', 'waves-light');
