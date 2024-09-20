@@ -2,7 +2,7 @@
 const projects = [
   {
     title: "Peer Tutoring Database",
-    description: "Java program with GUI that allows tutors, students, and admins to be registered in the peer tutoring system",
+    description: "Sign up for tutoring as a student, tutor, or administrator",
     image: "/ECE444_Lab_1/assets/img/peertutoring.jpg",
     link: "https://github.com/NivethaSathish/Peer-Tutoring-Database/tree/main",
     tools: "Java, JFrame",
@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: "Monopoly Game",
-    description: "Java program with GUI that allows you to play Monopoly with up to 3 other players",
+    description: "Play Monopoly with up to 3 other players",
     image: "/ECE444_Lab_1/assets/img/monopoly.jpg",
     link: "https://github.com/NivethaSathish/Monopoly-Game",
     tools: "Java, JFrame",
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: "Gomoko",
-    description: "Python program that allows you to play Gomoko against the program which makes moves by analyzing the board and deciding the best position to move based on potential wins or losses",
+    description: "Play Gomoko against an AI",
     image: "/ECE444_Lab_1/assets/img/gomoko.png",
     link: "https://github.com/NivethaSathish/Gomoko-Project",
     tools: "Python",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Autocomplete",
-    description: "C program that reads in a list of words (sorted by lexicographic order) along with their importance weights and retrieves the top terms that match a string query",
+    description: "Predict what string comes after a text",
     image: "/ECE444_Lab_1/assets/img/autocomplete.jpg",
     link: "https://github.com/NivethaSathish/Autocomplete-Project",
     tools: "C",
