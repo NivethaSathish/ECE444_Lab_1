@@ -111,7 +111,7 @@ function displayProject(project) {
 // Display the first project when the page loads
 function displayLatestProject() {
   // projects.sort(date)
-  displayProject(projects.sort(date)[0]);
+  displayProject(projects.sort((a,b) => b.date - a.date)[0]);
 }
 
 // Handle loading more projects
@@ -120,7 +120,7 @@ let currentProjectIndex = 1;
 function loadMoreProjects() {
   // projects.sort(date)
   if (currentProjectIndex < projects.length) {
-    displayProject(projects.sort(date)[currentProjectIndex]);
+    displayProject(projects.sort((a,b) => b.date - a.date)[currentProjectIndex]);
     currentProjectIndex++;
   } else {
     alert("No more projects to load!");
