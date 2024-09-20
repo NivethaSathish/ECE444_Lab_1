@@ -14,7 +14,7 @@ const projects = [
     image: "/ECE444_Lab_1/assets/img/monopoly.jpg",
     link: "https://github.com/NivethaSathish/Monopoly-Game",
     tools: "Java, JFrame",
-    date: new Date("2022-07-25")
+    date: new Date("2024-07-25")
   },
   {
     title: "Gomoko",
@@ -110,7 +110,6 @@ function displayProject(project) {
 
 // Display the first project when the page loads
 function displayLatestProject() {
-  // projects.sort(date)
   displayProject(projects.sort((a,b) => b.date - a.date)[0]);
 }
 
