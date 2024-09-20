@@ -36,7 +36,7 @@ function displayProject(project) {
 
   // Create the new elements for the card
   const cardDiv = document.createElement('div');
-  cardDiv.classList.add('col', 's12', 'm6', 'l4');
+  cardDiv.classList.add('col', 's12', 'm6', 'l6');
 
   const card = document.createElement('div');
   card.classList.add('card', 'medium');
