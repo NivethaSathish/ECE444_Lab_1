@@ -5,28 +5,32 @@ const projects = [
     description: "Java program with GUI that allows tutors, students, and admins to be registered in the peer tutoring system",
     image: "/ECE444_Lab_1/assets/img/peertutoring.jpg",
     link: "https://github.com/NivethaSathish/Peer-Tutoring-Database/tree/main",
-    tools: "Java, JFrame"
+    tools: "Java, JFrame",
+    date: new Date("2023-01-25")
   },
   {
     title: "Monopoly Game",
     description: "Java program with GUI that allows you to play Monopoly with up to 3 other players",
     image: "/ECE444_Lab_1/assets/img/monopoly.jpg",
     link: "https://github.com/NivethaSathish/Monopoly-Game",
-    tools: "Java, JFrame"
+    tools: "Java, JFrame",
+    date: new Date("2022-07-25")
   },
   {
     title: "Gomoko",
     description: "Python program that allows you to play Gomoko against the program which makes moves by analyzing the board and deciding the best position to move based on potential wins or losses",
     image: "/ECE444_Lab_1/assets/img/gomoko.png",
     link: "https://github.com/NivethaSathish/Gomoko-Project",
-    tools: "Python"
+    tools: "Python",
+    date: new Date("2022-06-25")
   },
   {
     title: "Autocomplete",
     description: "C program that reads in a list of words (sorted by lexicographic order) along with their importance weights and retrieves the top terms that match a string query",
     image: "/ECE444_Lab_1/assets/img/autocomplete.jpg",
     link: "https://github.com/NivethaSathish/Autocomplete-Project",
-    tools: "C"
+    tools: "C",
+    date: new Date("2023-08-25")
   }
 ];
 
@@ -106,6 +110,7 @@ function displayProject(project) {
 
 // Display the first project when the page loads
 function displayLatestProject() {
+  projects.sort(date)
   displayProject(projects[0]);
 }
 
@@ -121,9 +126,9 @@ function loadMoreProjects() {
   }
 }
 
-// Ensure the DOM is fully loaded before running the code
+// load DOM
 document.addEventListener('DOMContentLoaded', function () {
-  // Display the first project on page load
+  // first project is displayed when page is loaded
   displayLatestProject();
 
   // Add event listener to the "Load More" button
