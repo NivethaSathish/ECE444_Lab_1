@@ -1,4 +1,4 @@
-// Your project data
+// list of projects
 const projects = [
   {
     title: "Peer Tutoring Database",
@@ -30,7 +30,7 @@ const projects = [
   }
 ];
 
-// Function to display a single project
+// display a single project
 function displayProject(project) {
   const recentProjectsDiv = document.getElementById("recent-projects");
 
@@ -72,7 +72,7 @@ function displayProject(project) {
   link.target = "_blank";
   link.innerText = "View on GitHub";
 
-  // Card Reveal (contains the additional details)
+  // card reveal stuff
   const cardReveal = document.createElement('div');
   cardReveal.classList.add('card-reveal');
 
