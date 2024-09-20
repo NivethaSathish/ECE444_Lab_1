@@ -118,6 +118,7 @@ function displayLatestProject() {
 let currentProjectIndex = 1;
 
 function loadMoreProjects() {
+  projects.sort(date)
   if (currentProjectIndex < projects.length) {
     displayProject(projects[currentProjectIndex]);
     currentProjectIndex++;
