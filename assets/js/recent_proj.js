@@ -38,7 +38,6 @@ const projects = [
 function displayProject(project) {
   const recentProjectsDiv = document.getElementById("recent-projects");
 
-  // Create the new elements for the card
   const cardDiv = document.createElement('div');
   cardDiv.classList.add('col', 's12', 'm6', 'l6');
 
@@ -67,7 +66,6 @@ function displayProject(project) {
   const moreIcon = document.createElement('i');
   moreIcon.classList.add('mdi-navigation-more-vert', 'right');
 
-  // Card Action (contains the GitHub link)
   const cardAction = document.createElement('div');
   cardAction.classList.add('card-action');
 
@@ -92,16 +90,18 @@ function displayProject(project) {
   cardReveal.appendChild(revealTitle);
   cardReveal.appendChild(revealList);
 
-  // Append elements together
+  // put everything together
   cardImage.appendChild(img);
   cardTitle.appendChild(moreIcon);
   cardContent.appendChild(cardTitle);
   cardContent.appendChild(cardDescription);
   cardAction.appendChild(link);
+
   card.appendChild(cardImage);
   card.appendChild(cardContent);
   card.appendChild(cardAction);
   card.appendChild(cardReveal);
+
   cardDiv.appendChild(card);
 
   // Append the card to the recent projects div
