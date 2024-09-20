@@ -110,7 +110,7 @@ function displayProject(project) {
 
 // Display the first project when the page loads
 function displayLatestProject() {
-  projects.sort(date)
+  // projects.sort(date)
   displayProject(projects[0]);
 }
 
@@ -118,7 +118,7 @@ function displayLatestProject() {
 let currentProjectIndex = 1;
 
 function loadMoreProjects() {
-  projects.sort(date)
+  // projects.sort(date)
   if (currentProjectIndex < projects.length) {
     displayProject(projects[currentProjectIndex]);
     currentProjectIndex++;
